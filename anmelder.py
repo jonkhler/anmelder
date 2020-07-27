@@ -73,8 +73,7 @@ class Session:
 
                 # check whether appointment is bookable
                 # might be different for different services
-                # if cls and "buchbar" in cls and ("nichtbuchbar" not in cls):
-                if cls and "buchbar" in cls:
+                if cls and "buchbar" in cls and ("nichtbuchbar" not in cls):
                     day = int(field.text)
                     date = day, month
                     collected.append(date)
